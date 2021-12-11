@@ -19,7 +19,7 @@ request.onerror = function (event) {
 };
 
 function saveRecord(record) {
-  const transaction = db.transaction(["pending"], "readwrite"); // ==> Object { stores inside }
+  const transaction = db.transaction(["pending"], "readwrite");
 
   const store = transaction.objectStore("pending");
 
